@@ -1,8 +1,5 @@
-import sys
 import shutil
-import mimetypes
 import os
-from logging import shutdown
 
 
 def clean():
@@ -15,7 +12,7 @@ def clean():
     list_of_video = []
     list_of_music = []
     list_of_docs = []
-
+    list_of_torr = []
 
     for i in list_of_files:
         if i.lower().endswith('.jpg') | i.lower().endswith('.jpeg') |\
@@ -27,12 +24,15 @@ def clean():
             list_of_music.append(i)
         elif i.lower().endswith('.pdf'):
             list_of_docs.append(i)
+        elif i.lower().endswith('.torrent'):
+            list_of_torr.append(i)
 
     print('Количество файлов "Images: %s"\n'
           'Количество файлов "Video: %s"\n'
           'Количество файлов "Music: %s"\n'
+          'Количество файлов "Torrents: %s"\n'
           'Количество файлов "Docs: %s"\n' %
-          (len(list_of_images), len(list_of_video), len(list_of_music), len(list_of_docs)))
+          (len(list_of_images), len(list_of_video), len(list_of_music), len(list_of_torr), len(list_of_docs)))
 
     for i in list_of_images:
         shutil.move(os.path.join(os.path.join(home, 'Downloads'), i), os.path.join(home, 'Pictures'))
@@ -45,6 +45,10 @@ def clean():
 
     for i in list_of_video:
         shutil.move(os.path.join(os.path.join(home, 'Downloads'), i), os.path.join(home, 'Videos'))
+
+    for i in list_of_torr:
+        shutil.move(os.path.join(os.path.join(home), 'Downloads'), i),\
+        os.path.join(home, os.path.join('Downloads', 'torr'))
 if __name__ == '__main__':
     print("Начало очистки папки...")
     clean()
