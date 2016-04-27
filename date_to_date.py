@@ -1,6 +1,6 @@
 import datetime
 
-dict_of_date = {"Маме": datetime.datetime(2016, 5, 16, 0, 0, 0, 0),
+dict_of_date = {"Маме": datetime.datetime(2016, 6, 16, 0, 0, 0, 0),
                 "Папе": datetime.datetime(2017, 10, 4, 0, 0, 0, 0),
                 "Кате": datetime.datetime(2017, 10, 5, 8, 0, 0, 0)}
 

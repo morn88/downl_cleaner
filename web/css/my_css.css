@@ -1,24 +1,9 @@
-p.none {border-style: none;}
-p.dotted {border-style: dotted;}
-p.dashed {border-style: dashed;}
-p.double {border-style: double;}
-p.groove {border-style: groove;}
-p.ridge {border-style: ridge;}
-p.inset {border-style: inset;}
-p.outset {border-style: outset;}
-p.hidden {border-style: hidden;}
-body{
-    background-color: red;
+img {
+   float: left;
+   width: 120px;
+   margin-right: 10px;
 }
-div{
-    border: 5px solid green;
-    width: 100%;
-    height: 90px;
-    text-align: center;
-    font-family: serif;
-    font-size: 120%;
-}
-table {
-   border-collapse: separate;
-   empty-cells: hide;
+p {
+   width: 120px;
+   float: left;
 }
