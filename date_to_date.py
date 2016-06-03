@@ -17,11 +17,11 @@ dict_of_date = {"Маме": datetime.datetime(2016, 6, 16, 0, 0, 0, 0),
 
 dr_dict = {"Маме": datetime.datetime(2016, 6, 15, 0, 0, 0, 0),
            "Папе": datetime.datetime(2016, 10, 4, 0, 0, 0, 0),
-           "Кате": datetime.datetime(2017, 1, 21, 0, 0, 0, 0),
-           "Паше": datetime.datetime(2016, 8, 26, 0, 0, 0, 0),
+           "Кате": datetime.datetime(2017, 1, 21, 11, 30, 0, 0),
+           "Паше": datetime.datetime(2016, 8, 26, 6, 30, 0, 0),
            "Юле": datetime.datetime(2017, 2, 24, 0, 0, 0, 0),
            "Вите": datetime.datetime(2016, 6, 15, 0, 0, 0, 0),
-           'Ване': datetime.datetime(2016, 10, 5, 0, 0, 0, 0)
+           'Ване': datetime.datetime(2016, 10, 5, 7, 0, 0, 0)
            }
 
 
