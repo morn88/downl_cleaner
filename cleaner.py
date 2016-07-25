@@ -57,12 +57,12 @@ def clean():
 
     for i in list_of_torr:
         shutil.move(os.path.join(os.path.join(home), 'Downloads'), i),\
-        os.path.join(home, os.path.join('Downloads', 'torr'))
+                    os.path.join(home, os.path.join('Downloads', 'torr'))
     for i in list_of_exe:
         try:
             shutil.move(os.path.join(os.path.join(home, 'Downloads'), i), path_to_distr)
-        except:
-            pass
+        except Exception as e:
+            print(e)
 
 
 if __name__ == '__main__':
